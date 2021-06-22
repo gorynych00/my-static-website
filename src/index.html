@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Website</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rock+Salt"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <label for="theme">Theme: </label>
+    <select id="theme">
+      <option value="white">White</option>
+      <option value="black">Black</option>
+    </select>
+
+    <header>
+      <h1>Egor Lynov Website</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>Hi, my name is Egor and this is basic information about me</h2>
+        <p>
+          I was born on May 31, 1987 in Voronezh.
+          I studied at the Koltsov's first humanitarian hymanisia.
+          Then I graduated from the Faculty of Applied Mathematics and Mechanics of Voronezh State University as a specialty system programmer.
+          I`m software engineer, fullstack-developer, DevOps since the 2009 year.
+          I worked in web studios, outsourcing companies and startups in Voronezh and remotely.
+          I write in programming languages:
+        </p>
+        <ul>          
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/TypeScript">TypeScript</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)">Dart</a>
+          </li>
+        </ul>
+        <p>I use technologies:</p>
+        <ul>
+          <li>
+            <a href="https://www.docker.com/">Docker</a>
+          </li>
+          <li>
+            <a href="https://kubernetes.io/">Kubernetes</a>
+          </li>
+          <li>
+            <a href="https://webassembly.org/">WebAssembly</a>
+          </li>
+          <li>
+            <a href="https://nodejs.org/">Node.js</a>
+          </li>
+          <li>
+            <a href="https://webpack.js.org/">Webpack</a>
+          </li>
+          <li>
+            <a href="https://reactjs.org/">React</a>
+          </li>
+          <li>
+            <a href="https://emberjs.com/">Ember</a>
+          </li>
+          <li>
+            <a href="https://vuejs.org/">Vue</a>
+          </li>
+          <li>
+            <a href="https://svelte.dev/">Svelte</a>
+          </li>
+          <li>
+            <a href="https://angular.io/">Angular</a>
+          </li>
+          <li>
+            <a href="https://www.djangoproject.com/">Django</a>
+          </li>
+          <li>
+            <a href="https://expressjs.com/">Express</a>
+          </li>
+        </ul>
+
+        <h2>Contacts:</h2>
+
+        <ul>
+          <li><a href="https://twitter.com/gorynych00">Twitter</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/egor-lynov-90b141162/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/gorynych00">GitHub</a></li>
+          <li><a href="mailto:gorynych00@gmail.com">Mail</a></li>
+        </ul>
+      </article>
+
+      <aside>
+        <h2>Contact with me</h2>
+
+        <form novalidate>
+          <p>The first two fields are required!</p>
+          <ul>
+            <li>
+              <label for="name">
+                <span>Name:</span>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  aria-required="true"
+                />
+              </label>
+            </li>
+            <li>
+              <label for="mail">
+                <span>Mail:</span>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_mail"
+                  aria-required="true"
+                />
+                <span class="error" aria-live="polite"></span>
+              </label>
+            </li>
+            <li>
+              <label for="job">Special:</label>
+              <select class="job-menu" name="job" id="job">
+                <option value="">--select job--</option>
+                <option value="frontend">Frontend-developer</option>
+                <option value="backend">Backend-developer</option>
+                <option value="devops">DevOps-engineer</option>
+                <option value="teamlead">TeamLead</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+            <li>
+              <label for="other-job">Other:</label>
+              <input
+                class="other"
+                type="text"
+                id="other-job"
+                name="other-job"
+              />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea
+                name="user_message"
+                id="msg"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send me!</button>
+            </li>
+          </ul>
+        </form>
+      </aside>
+    </section>
+
+    <footer>
+      <p>© Copyright by no one, 2021. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
