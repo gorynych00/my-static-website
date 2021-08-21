@@ -4,3 +4,11 @@ node_js:
 before_install:
  - npm i -g npm@7.15.1
  cache: npm
+ env:
+  - CXX=g++-4.8
+  addons:
+   apt:
+    sources: 
+     - ubuntu-toolchain-r-test
+    packges:
+     - g++-4.8
